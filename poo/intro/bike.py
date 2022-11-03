@@ -4,6 +4,9 @@ class Bicicleta:
         self.modelo = modelo
         self.ano = ano
         self.valor = valor
+    
+    def __str__(self):
+        return f"{self.__class__.__name__}"
 
     def buzinar(self):
         print("plim... plim...")
@@ -20,4 +23,4 @@ b1.buzinar()
 b1.correr()
 b1.parar()
 
-print(b1.cor)
+print(b1)
